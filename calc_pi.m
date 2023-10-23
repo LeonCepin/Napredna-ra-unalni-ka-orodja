@@ -43,5 +43,10 @@ function [] = risanje(m_krog,m_kvad)
     hold on;
     plot(razlika(:, 1), razlika(:, 2), 'go',"MarkerSize",1);
     axis equal;
+    legend('Krožnica','Točke v krogu','Točke izven kroga'):
+    title('Metoda Monte Carlo za iskanje približka števila pi');
+    xlabel('x');
+    ylabel('y');
+    hold off;
 
 end
